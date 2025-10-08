@@ -44,7 +44,7 @@ const CombatSection = () => {
                 <div className="flex flex-col items-center text-center">
                   <div className="mb-4 p-4 bg-red-600/10 rounded-full group-hover:bg-red-600/20 transition-colors">
                     {index === 0 && <Zap className="w-10 h-10 text-red-600" />}
-                    {index === 1 && <Target className="w-10 h-10 text-red-600" />}
+                    {index === 1 && <Crosshair className="w-10 h-10 text-red-600" />}
                     {index === 2 && <Activity className="w-10 h-10 text-red-600" />}
                     {index === 3 && <Dumbbell className="w-10 h-10 text-red-600" />}
                   </div>
