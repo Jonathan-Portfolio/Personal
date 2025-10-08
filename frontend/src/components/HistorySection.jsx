@@ -39,7 +39,8 @@ const HistorySection = () => {
             {history.interests.map((interest, index) => (
               <div
                 key={index}
-                className="history-card bg-black/70 backdrop-blur-sm border border-amber-900/30 p-6 hover:border-amber-600 transition-all duration-300 hover:scale-105 group"
+                onClick={() => setSelectedTopic(interest)}
+                className="history-card bg-black/70 backdrop-blur-sm border border-amber-900/30 p-6 hover:border-amber-600 transition-all duration-300 hover:scale-105 group cursor-pointer"
               >
                 <div className="flex items-start gap-3">
                   <div className="flex-shrink-0 mt-1">
@@ -57,11 +58,54 @@ const HistorySection = () => {
                     <p className="text-gray-400 text-sm leading-relaxed">
                       {interest.focus}
                     </p>
+                    <p className="text-amber-500 text-xs mt-4 tracking-wide">Click to learn more →</p>
                   </div>
                 </div>
               </div>
             ))}
           </div>
+
+          {/* Popup Modal */}
+          {selectedTopic && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center p-4 animate-fadeIn">
+              <div 
+                className="absolute inset-0 bg-black/90 backdrop-blur-sm"
+                onClick={() => setSelectedTopic(null)}
+              ></div>
+              
+              <div className="relative z-10 max-w-2xl w-full bg-gradient-to-br from-amber-950/90 to-black/95 border border-amber-900/50 p-8 animate-modalSlideUp">
+                <button
+                  onClick={() => setSelectedTopic(null)}
+                  className="absolute top-4 right-4 text-gray-400 hover:text-white p-2 bg-black/50 rounded-full transition-all duration-300 hover:scale-110"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+                
+                <div className="mb-6">
+                  <h2 className="text-3xl font-bold text-amber-500 mb-2">
+                    {selectedTopic.topic}
+                  </h2>
+                  <p className="text-amber-600 text-sm tracking-widest uppercase">
+                    {selectedTopic.era}
+                  </p>
+                </div>
+                
+                <div className="border-l-4 border-amber-600 pl-6 mb-6">
+                  <p className="text-gray-400 text-sm uppercase tracking-wide mb-2">Overview</p>
+                  <p className="text-gray-300 text-base leading-relaxed">
+                    {selectedTopic.description}
+                  </p>
+                </div>
+                
+                <button
+                  onClick={() => setSelectedTopic(null)}
+                  className="w-full px-6 py-3 bg-amber-600 hover:bg-amber-700 text-black font-medium tracking-widest uppercase transition-all duration-300 hover:scale-105"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          )}
 
           <div className="mt-16 text-center">
             <div className="inline-block bg-amber-900/20 border border-amber-900/50 px-8 py-4">
