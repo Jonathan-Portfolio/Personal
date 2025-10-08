@@ -68,9 +68,30 @@ const FutureSection = () => {
 
           <div className="mt-24 text-center">
             <div className="max-w-4xl mx-auto bg-gradient-to-br from-gray-900 via-black to-gray-900 border border-gray-800 p-12">
-              <h3 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
+              <h3 className="text-4xl md:text-6xl font-bold text-white mb-8 tracking-tight">
                 {hero.motto}
               </h3>
+              
+              <div className="mb-10">
+                <p className="text-gray-400 text-sm tracking-widest uppercase mb-6">Connect With Me</p>
+                <div className="flex items-center justify-center gap-6">
+                  {future.socialMedia.map((social, index) => (
+                    <a
+                      key={index}
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="social-link bg-gray-900/50 hover:bg-cyan-600 border border-gray-700 hover:border-cyan-500 p-4 rounded-full transition-all duration-300 hover:scale-110 group"
+                      aria-label={social.name}
+                    >
+                      <div className="text-gray-400 group-hover:text-white transition-colors">
+                        {getSocialIcon(social.icon)}
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+
               <div className="flex items-center justify-center gap-4 mt-10">
                 <a
                   href="#military-law"
