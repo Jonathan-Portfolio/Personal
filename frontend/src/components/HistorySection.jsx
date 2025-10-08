@@ -1,9 +1,10 @@
-import React from 'react';
-import { BookMarked, Search, Lock } from 'lucide-react';
+import React, { useState } from 'react';
+import { BookMarked, Search, Lock, X } from 'lucide-react';
 import { portfolioData } from '../data/mock';
 
 const HistorySection = () => {
   const { history } = portfolioData;
+  const [selectedTopic, setSelectedTopic] = useState(null);
 
   return (
     <section id="history" className="room-section relative min-h-screen bg-gradient-to-br from-gray-950 via-black to-gray-950 py-20">
