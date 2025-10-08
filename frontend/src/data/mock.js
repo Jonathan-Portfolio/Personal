@@ -95,6 +95,12 @@ export const portfolioData = {
         description: "Deep dives into world events and untold stories",
         status: "Ongoing"
       }
+    ],
+    socialMedia: [
+      { name: "LinkedIn", url: "https://linkedin.com/in/jonathan-philippe", icon: "linkedin" },
+      { name: "Instagram", url: "https://instagram.com/jonathan.philippe", icon: "instagram" },
+      { name: "Snapchat", url: "https://snapchat.com/add/jonathan.philippe", icon: "snapchat" },
+      { name: "Facebook", url: "https://facebook.com/jonathan.philippe", icon: "facebook" }
     ]
   }
 };
