@@ -126,17 +126,17 @@ const DestinationModal = ({ destination, onClose }) => {
       ></div>
       
       {/* Modal content */}
-      <div className="relative z-10 max-w-5xl w-full mx-6 bg-gradient-to-br from-gray-900 via-black to-gray-900 border border-red-900/30 overflow-hidden cinematic-content">
+      <div className="relative z-10 max-w-5xl w-full mx-4 md:mx-6 bg-gradient-to-br from-gray-900 via-black to-gray-900 border border-red-900/30 overflow-hidden cinematic-content max-h-[90vh] overflow-y-auto">
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 z-20 text-gray-400 hover:text-white p-2 bg-black/50 rounded-full transition-all duration-300 hover:scale-110"
+          className="absolute top-4 right-4 md:top-6 md:right-6 z-20 text-gray-400 hover:text-white p-2 bg-black/50 rounded-full transition-all duration-300 hover:scale-110"
         >
-          <X className="w-6 h-6" />
+          <X className="w-5 h-5 md:w-6 md:h-6" />
         </button>
         
         {/* Hero image */}
-        <div className="relative h-96 overflow-hidden">
+        <div className="relative h-48 md:h-96 overflow-hidden">
           <img
             src={destination.image}
             alt={destination.name}
@@ -145,17 +145,17 @@ const DestinationModal = ({ destination, onClose }) => {
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
           
           {/* Passport stamp overlay */}
-          <div className="absolute top-8 left-8 passport-stamp">
-            <div className="border-4 border-red-600 rounded-lg p-4 bg-black/70 backdrop-blur-sm transform -rotate-6">
-              <p className="text-6xl mb-2">{destination.flag}</p>
-              <p className="text-red-500 font-bold text-lg tracking-wider uppercase">{destination.name}</p>
-              <p className="text-gray-400 text-sm tracking-widest">{destination.year}</p>
+          <div className="absolute top-4 left-4 md:top-8 md:left-8 passport-stamp">
+            <div className="border-2 md:border-4 border-red-600 rounded-lg p-2 md:p-4 bg-black/70 backdrop-blur-sm transform -rotate-6">
+              <p className="text-3xl md:text-6xl mb-1 md:mb-2">{destination.flag}</p>
+              <p className="text-red-500 font-bold text-sm md:text-lg tracking-wider uppercase">{destination.name}</p>
+              <p className="text-gray-400 text-xs md:text-sm tracking-widest">{destination.year}</p>
             </div>
           </div>
         </div>
         
         {/* Content */}
-        <div className="p-12">
+        <div className="p-6 md:p-12">
           {/* Quote */}
           <div className="mb-8 border-l-4 border-red-600 pl-6">
             <p className="text-2xl md:text-3xl text-white font-light italic leading-relaxed">
