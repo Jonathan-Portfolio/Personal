@@ -1,34 +1,140 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.App {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.hero-title {
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 30px rgba(220, 38, 38, 0.5);
+}
+
+.maze-grid {
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(rgba(75, 75, 75, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(75, 75, 75, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: maze-move 20s linear infinite;
+}
+
+@keyframes maze-move {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(50px, 50px);
     }
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes spin-slow {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
     }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 8s linear infinite;
+}
+
+.grid-pattern {
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(234, 179, 8, 0.05) 2px, transparent 2px),
+        linear-gradient(90deg, rgba(234, 179, 8, 0.05) 2px, transparent 2px);
+    background-size: 100px 100px;
+}
+
+.room-section {
+    scroll-margin-top: 0;
+}
+
+.achievement-card,
+.history-card,
+.combat-card,
+.principle-card,
+.project-card {
+    cursor: pointer;
+}
+
+.neon-overlay {
+    background: radial-gradient(circle at 50% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.map-container {
+    position: relative;
+    border: 2px solid rgba(59, 130, 246, 0.3);
+}
+
+.map-pin {
+    cursor: pointer;
+    z-index: 10;
+}
+
+.destination-card {
+    backdrop-filter: blur(10px);
+}
+
+.mission-statement {
+    backdrop-filter: blur(10px);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .maze-grid {
+        background-size: 30px 30px;
+    }
+    
+    @keyframes maze-move {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(30px, 30px);
+        }
+    }
+}
+
+section {
+    transition: opacity 0.3s ease-in-out;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+button:focus-visible {
+    outline: 2px solid rgba(220, 38, 38, 0.5);
+    outline-offset: 2px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
