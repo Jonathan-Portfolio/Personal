@@ -21,14 +21,14 @@ export const portfolioData = {
   
   travel: {
     title: "Traveler's Mind",
-    subtitle: "Destinations to Explore",
-    mapImage: "https://images.unsplash.com/photo-1589395937920-07cce323acba?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHx3b3JsZCUyMG1hcCUyMHRyYXZlbHxlbnwwfHx8fDE3NTk4ODIwNjR8MA&ixlib=rb-4.1.0&q=85",
+    subtitle: "Places I've Explored",
+    mapImage: "https://images.unsplash.com/photo-1642009071428-119813340e22?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHx3b3JsZCUyMG1hcCUyMHRyYXZlbHxlbnwwfHx8fDE3NTk4ODIwNjR8MA&ixlib=rb-4.1.0&q=85",
     destinations: [
-      { name: "Portugal", lat: 39.3999, lng: -8.2245, reason: "Rich history and coastal beauty" },
-      { name: "Thailand", lat: 15.8700, lng: 100.9925, reason: "Ancient temples and culture" },
-      { name: "Nigeria", lat: 9.0820, lng: 8.6753, reason: "Ancestral roots and heritage" },
-      { name: "Japan", lat: 36.2048, lng: 138.2529, reason: "Discipline and tradition" },
-      { name: "Brazil", lat: -14.2350, lng: -51.9253, reason: "Vibrant culture and martial arts" }
+      { name: "Portugal", position: { top: "35%", left: "20%" }, year: "2023", memory: "Coastal sunsets & historic Lisbon" },
+      { name: "Thailand", position: { top: "45%", left: "72%" }, year: "2022", memory: "Ancient temples & Thai cuisine" },
+      { name: "Nigeria", position: { top: "52%", left: "26%" }, year: "2021", memory: "Reconnecting with roots" },
+      { name: "Japan", position: { top: "40%", left: "80%" }, year: "2024", memory: "Discipline meets tradition" },
+      { name: "Brazil", position: { top: "70%", left: "35%" }, year: "2023", memory: "MMA culture & energy" }
     ]
   },
   
