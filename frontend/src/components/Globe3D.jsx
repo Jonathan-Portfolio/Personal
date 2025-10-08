@@ -157,31 +157,31 @@ const DestinationModal = ({ destination, onClose }) => {
         {/* Content */}
         <div className="p-6 md:p-12">
           {/* Quote */}
-          <div className="mb-8 border-l-4 border-red-600 pl-6">
-            <p className="text-2xl md:text-3xl text-white font-light italic leading-relaxed">
+          <div className="mb-6 md:mb-8 border-l-4 border-red-600 pl-4 md:pl-6">
+            <p className="text-lg md:text-2xl lg:text-3xl text-white font-light italic leading-relaxed">
               "{destination.quote}"
             </p>
           </div>
           
           {/* Memory */}
-          <div className="mb-8">
-            <h3 className="text-red-500 text-sm font-bold tracking-widest uppercase mb-4">
+          <div className="mb-6 md:mb-8">
+            <h3 className="text-red-500 text-xs md:text-sm font-bold tracking-widest uppercase mb-3 md:mb-4">
               Memory
             </h3>
-            <p className="text-gray-300 text-lg leading-relaxed">
+            <p className="text-gray-300 text-base md:text-lg leading-relaxed">
               {destination.memory}
             </p>
           </div>
           
           {/* Audio control */}
-          <div className="flex items-center justify-between pt-6 border-t border-gray-800">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-6 border-t border-gray-800">
             <div>
               <p className="text-gray-500 text-sm">Ambient Sound</p>
               <p className="text-gray-400 text-xs capitalize">{destination.sound}</p>
             </div>
             <button
               onClick={toggleAudio}
-              className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white text-sm font-medium tracking-widest uppercase transition-all duration-300 hover:scale-105"
+              className="w-full sm:w-auto px-6 py-3 bg-red-600 hover:bg-red-700 text-white text-xs md:text-sm font-medium tracking-widest uppercase transition-all duration-300 hover:scale-105"
             >
               {audioPlaying ? 'Pause' : 'Play'} Sound
             </button>
