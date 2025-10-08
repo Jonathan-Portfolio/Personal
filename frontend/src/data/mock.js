@@ -237,12 +237,42 @@ export const portfolioData = {
     image: "https://images.unsplash.com/photo-1535905748047-14b2415c77d5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxkYXJrJTIwbGlicmFyeXxlbnwwfHx8fDE3NTk4ODIwNjh8MA&ixlib=rb-4.1.0&q=85",
     secondaryImage: "https://images.unsplash.com/photo-1419640303358-44f0d27f48e7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwyfHxkYXJrJTIwbGlicmFyeXxlbnwwfHx8fDE3NTk4ODIwNjh8MA&ixlib=rb-4.1.0&q=85",
     interests: [
-      { topic: "9/11 & Inside Jobs", era: "2001", focus: "Building 7, Pentagon anomalies, and unanswered questions" },
-      { topic: "JFK Assassination", era: "1963", focus: "Grassy knoll, magic bullet theory, CIA involvement" },
-      { topic: "Area 51 & UFOs", era: "1947-Present", focus: "Roswell incident, government disclosure, alien technology" },
-      { topic: "MKUltra Mind Control", era: "1950s-1970s", focus: "CIA experiments, psychological warfare, LSD trials" },
-      { topic: "The Mafia Commission", era: "1920s-1990s", focus: "Five Families, organizational power, political corruption" },
-      { topic: "Operation Paperclip", era: "1945-1959", focus: "Nazi scientists in America, Project Mercury, Cold War tech race" }
+      { 
+        topic: "9/11 & Inside Jobs", 
+        era: "2001", 
+        focus: "Building 7, Pentagon anomalies, and unanswered questions",
+        description: "September 11th raised questions that persist today. Why did Building 7 collapse without being hit? What struck the Pentagon—a plane or missile? The official narrative left holes that investigative minds continue to probe, from insurance policies to war justifications."
+      },
+      { 
+        topic: "JFK Assassination", 
+        era: "1963", 
+        focus: "Grassy knoll, magic bullet theory, CIA involvement",
+        description: "Dallas, 1963. President Kennedy's head snapped backward, yet the official story says the shot came from behind. The 'magic bullet' defied physics, witnesses reported shots from the grassy knoll, and Jack Ruby silenced Lee Harvey Oswald. Was it a lone gunman or a conspiracy reaching the highest levels?"
+      },
+      { 
+        topic: "Area 51 & UFOs", 
+        era: "1947-Present", 
+        focus: "Roswell incident, government disclosure, alien technology",
+        description: "Nevada's most secretive base. What really crashed in Roswell—a weather balloon or extraterrestrial craft? Decades of denials ended with recent Pentagon UAP disclosures. Are we reverse-engineering alien tech, or is the truth stranger than we imagine?"
+      },
+      { 
+        topic: "MKUltra Mind Control", 
+        era: "1950s-1970s", 
+        focus: "CIA experiments, psychological warfare, LSD trials",
+        description: "Declassified documents revealed the CIA's horrifying experiments on unwitting citizens. LSD dosing, torture techniques, mind control attempts—all in the name of Cold War psychological warfare. How many operations remain classified? What did they perfect that we'll never know about?"
+      },
+      { 
+        topic: "The Mafia Commission", 
+        era: "1920s-1990s", 
+        focus: "Five Families, organizational power, political corruption",
+        description: "La Cosa Nostra built an empire in America's shadows. Five Families ruled New York with military precision, corrupting politicians, police, and unions. Their organizational structure rivaled corporations, their violence legendary, their influence still whispered about in certain circles."
+      },
+      { 
+        topic: "Operation Paperclip", 
+        era: "1945-1959", 
+        focus: "Nazi scientists in America, Project Mercury, Cold War tech race",
+        description: "After WWII, America recruited 1,600 Nazi scientists, whitewashing war crimes for technological supremacy. Werner von Braun, architect of V-2 rockets that killed thousands, became NASA's hero. How many war criminals escaped justice for Cold War advantage?"
+      }
     ]
   },
   
