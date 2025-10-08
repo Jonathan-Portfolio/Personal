@@ -57,9 +57,19 @@ const Globe3D = ({ destinations, onDestinationClick }) => {
         atmosphereColor="rgba(220, 38, 38, 0.3)"
         atmosphereAltitude={0.25}
         
-        // Styling
-        width={window.innerWidth > 768 ? 800 : window.innerWidth - 48}
-        height={window.innerWidth > 768 ? 800 : 600}
+        // Styling - Responsive sizing
+        width={
+          typeof window !== 'undefined' 
+            ? (window.innerWidth > 1200 ? 800 : 
+               window.innerWidth > 768 ? 700 : 
+               Math.min(window.innerWidth - 32, 500))
+            : 800
+        }
+        height={
+          typeof window !== 'undefined'
+            ? (window.innerWidth > 768 ? 700 : 500)
+            : 700
+        }
         
         // Animation
         animateIn={true}
