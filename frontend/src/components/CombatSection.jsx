@@ -87,13 +87,13 @@ const CombatSection = () => {
             <div className="relative">
               <img
                 src={combat.ringImage}
-                alt="Boxing Ring"
+                alt="Training Range"
                 className="w-full h-full object-cover opacity-80"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <p className="text-white text-xl font-bold tracking-wide">
-                  "The fight is won or lost far away from witnesses—behind the lines, in the gym."
+                  "Precision under pressure. Every rep, every round, every shot—training for excellence."
                 </p>
               </div>
             </div>
