@@ -23,7 +23,7 @@ const Globe3D = ({ destinations, onDestinationClick }) => {
   const pointsData = destinations.map(dest => ({
     lat: dest.lat,
     lng: dest.lng,
-    size: 0.8,
+    size: 0.6,
     color: '#dc2626',
     label: `${dest.flag} ${dest.name}`,
     destination: dest
