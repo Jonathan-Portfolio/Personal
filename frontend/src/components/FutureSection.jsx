@@ -1,9 +1,24 @@
 import React from 'react';
-import { Rocket, ArrowRight, Clock } from 'lucide-react';
+import { Rocket, ArrowRight, Clock, Linkedin, Instagram, Facebook } from 'lucide-react';
 import { portfolioData } from '../data/mock';
 
 const FutureSection = () => {
   const { future, hero } = portfolioData;
+
+  const getSocialIcon = (iconName) => {
+    const icons = {
+      linkedin: Linkedin,
+      instagram: Instagram,
+      facebook: Facebook,
+      snapchat: () => (
+        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12.206 0c-6.617 0-11.977 5.37-11.977 11.998 0 3.088 1.162 5.899 3.067 8.018l-.178.667c-.126.471-.257.961-.257 1.438 0 .908.513 1.645 1.397 1.645.452 0 .917-.16 1.368-.471.818-.564 1.443-1.371 2.342-2.284.693.131 1.41.2 2.145.2 6.617 0 11.977-5.37 11.977-11.998C24.183 5.37 18.823 0 12.206 0z"/>
+        </svg>
+      )
+    };
+    const Icon = icons[iconName];
+    return Icon ? <Icon className="w-6 h-6" /> : null;
+  };
 
   return (
     <section id="future" className="room-section relative min-h-screen bg-black py-20">
