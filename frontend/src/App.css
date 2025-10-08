@@ -184,3 +184,53 @@ img {
 .social-link:hover::before {
     transform: translateX(100%);
 }
+
+.globe-container canvas {
+    outline: none;
+}
+
+.cinematic-modal {
+    animation: modalFadeIn 0.5s ease-out;
+}
+
+.cinematic-content {
+    animation: modalSlideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes modalSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.passport-stamp {
+    animation: stampRotate 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes stampRotate {
+    0% {
+        opacity: 0;
+        transform: rotate(-180deg) scale(0);
+    }
+    50% {
+        transform: rotate(-10deg) scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(-6deg) scale(1);
+    }
+}
