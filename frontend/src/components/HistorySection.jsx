@@ -34,24 +34,23 @@ const HistorySection = () => {
             {history.description}
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {history.interests.map((interest, index) => (
               <div
                 key={index}
-                className="history-card bg-black/70 backdrop-blur-sm border border-amber-900/30 p-8 hover:border-amber-600 transition-all duration-300 group"
+                className="history-card bg-black/70 backdrop-blur-sm border border-amber-900/30 p-6 hover:border-amber-600 transition-all duration-300 hover:scale-105 group"
               >
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0">
-                    {index === 0 && <Lock className="w-8 h-8 text-amber-600" />}
-                    {index === 1 && <Search className="w-8 h-8 text-amber-600" />}
-                    {index === 2 && <BookMarked className="w-8 h-8 text-amber-600" />}
-                    {index === 3 && <Lock className="w-8 h-8 text-amber-600" />}
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 mt-1">
+                    {index % 3 === 0 && <Lock className="w-6 h-6 text-amber-600" />}
+                    {index % 3 === 1 && <Search className="w-6 h-6 text-amber-600" />}
+                    {index % 3 === 2 && <BookMarked className="w-6 h-6 text-amber-600" />}
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-amber-500 transition-colors">
+                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-amber-500 transition-colors">
                       {interest.topic}
                     </h3>
-                    <p className="text-amber-600 text-sm font-medium mb-3 tracking-wide">
+                    <p className="text-amber-600 text-xs font-medium mb-3 tracking-wider uppercase">
                       {interest.era}
                     </p>
                     <p className="text-gray-400 text-sm leading-relaxed">
