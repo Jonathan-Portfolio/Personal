@@ -24,6 +24,42 @@ export const portfolioData = {
     subtitle: "Places I've Explored",
     destinations: [
       {
+        name: "Miami",
+        country: "United States",
+        flag: "🇺🇸",
+        lat: 25.7617,
+        lng: -80.1918,
+        year: "2024",
+        quote: "Where Latin heat meets Ocean Drive glamour. The city that never stops moving.",
+        memory: "South Beach at midnight—Art Deco neon reflecting off classic cars, Cuban cafecitos at 3 AM, boxing on the beach at sunrise, and the electric energy of a city that lives in perpetual motion.",
+        image: "https://images.unsplash.com/photo-1506966953602-c20cc11f75e3?q=80&w=2000",
+        sound: "waves"
+      },
+      {
+        name: "New York City",
+        country: "United States",
+        flag: "🇺🇸",
+        lat: 40.7128,
+        lng: -74.0060,
+        year: "2023",
+        quote: "If you can make it here, you can make it anywhere. The concrete jungle where dreams are made.",
+        memory: "Brooklyn Bridge at dawn, Times Square's organized chaos, pizza slices at 2 AM, sparring sessions in Gleason's Gym, and understanding why they call it the city that never sleeps.",
+        image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=2000",
+        sound: "traffic"
+      },
+      {
+        name: "Los Angeles",
+        country: "United States",
+        flag: "🇺🇸",
+        lat: 34.0522,
+        lng: -118.2437,
+        year: "2023",
+        quote: "City of angels and endless summers. Where ambition meets the Pacific.",
+        memory: "Venice Beach training grounds, Hollywood hustle, tacos from street vendors that taste better than any restaurant, and sunsets over the Pacific that make you believe in second chances.",
+        image: "https://images.unsplash.com/photo-1534190239940-9ba8944ea261?q=80&w=2000",
+        sound: "waves"
+      },
+      {
         name: "Portugal",
         country: "Portugal",
         flag: "🇵🇹",
@@ -31,9 +67,117 @@ export const portfolioData = {
         lng: -9.1393,
         year: "2023",
         quote: "Where history whispers through cobblestone streets and the Atlantic wind carries stories of explorers.",
-        memory: "Lisbon's golden hour transformed the Alfama district into a living painting—fado music drifting from open windows, the scent of bacalhau, and endless sunset views.",
+        memory: "Lisbon's golden hour transformed the Alfama district into a living painting—fado music drifting from open windows, the scent of bacalhau, and endless sunset views over terracotta roofs.",
         image: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?q=80&w=2000",
         sound: "waves"
+      },
+      {
+        name: "France",
+        country: "France",
+        flag: "🇫🇷",
+        lat: 48.8566,
+        lng: 2.3522,
+        year: "2024",
+        quote: "Art, revolution, and croissants. Where elegance is a way of life.",
+        memory: "Paris mornings—the Eiffel Tower piercing fog, espresso and pain au chocolat in Montmartre, boxing at La Salle Arenberg, and the Louvre's silent conversations with history.",
+        image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=2000",
+        sound: "traffic"
+      },
+      {
+        name: "Sweden",
+        country: "Sweden",
+        flag: "🇸🇪",
+        lat: 59.3293,
+        lng: 18.0686,
+        year: "2022",
+        quote: "Nordic discipline meets modern innovation. Cold winters, warm hearts.",
+        memory: "Stockholm's midnight sun in summer, Swedish meatballs that exceeded expectations, training in gyms that smell like leather and determination, and understanding Scandinavian minimalism.",
+        image: "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?q=80&w=2000",
+        sound: "waves"
+      },
+      {
+        name: "Italy",
+        country: "Italy",
+        flag: "🇮🇹",
+        lat: 41.9028,
+        lng: 12.4964,
+        year: "2023",
+        quote: "Where every street is a museum and every meal is a celebration.",
+        memory: "Rome's Colosseum at sunrise—gladiators once fought where I now stood. Pasta that made me question every meal before, espresso shots with locals, and the weight of walking through 3000 years of history.",
+        image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=2000",
+        sound: "traffic"
+      },
+      {
+        name: "Japan",
+        country: "Japan",
+        flag: "🇯🇵",
+        lat: 35.6762,
+        lng: 139.6503,
+        year: "2024",
+        quote: "Ancient discipline perfected. Where tradition and technology coexist in perfect harmony.",
+        memory: "Tokyo's neon jungle contrasting with Kyoto's temples. Ramen at 4 AM, training with fighters who treat martial arts like meditation, and cherry blossoms reminding you that beauty is temporary.",
+        image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2000",
+        sound: "traffic"
+      },
+      {
+        name: "Toronto",
+        country: "Canada",
+        flag: "🇨🇦",
+        lat: 43.6532,
+        lng: -79.3832,
+        year: "2022",
+        quote: "The world in one city. Multicultural heartbeat of the North.",
+        memory: "CN Tower overlooking diversity itself—every neighborhood a different country, poutine after midnight training sessions, and a city that taught me strength comes in different languages.",
+        image: "https://images.unsplash.com/photo-1517935706615-2717063c2225?q=80&w=2000",
+        sound: "traffic"
+      },
+      {
+        name: "Germany",
+        country: "Germany",
+        flag: "🇩🇪",
+        lat: 52.5200,
+        lng: 13.4050,
+        year: "2023",
+        quote: "Efficiency meets history. Where the past is confronted, not forgotten.",
+        memory: "Berlin's Brandenburg Gate—history's heavy weight in architecture. Currywurst from street stands, training in gyms with Cold War ghosts, and a city rebuilt from rubble into resilience.",
+        image: "https://images.unsplash.com/photo-1560969184-10fe8719e047?q=80&w=2000",
+        sound: "traffic"
+      },
+      {
+        name: "Dubai",
+        country: "United Arab Emirates",
+        flag: "🇦🇪",
+        lat: 25.2048,
+        lng: 55.2708,
+        year: "2024",
+        quote: "Where ambition built a city from sand. The future is already here.",
+        memory: "Burj Khalifa piercing clouds—a city that decided the impossible was just the starting point. Desert heat, gold souks, training in gyms with views of tomorrow, and luxury that makes you redefine possible.",
+        image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2000",
+        sound: "traffic"
+      },
+      {
+        name: "Cancún",
+        country: "Mexico",
+        flag: "🇲🇽",
+        lat: 21.1619,
+        lng: -86.8515,
+        year: "2023",
+        quote: "Where Mayan history meets Caribbean paradise. Turquoise waters, ancient secrets.",
+        memory: "Tulum's ruins overlooking the sea—warriors once guarded these shores. Fresh ceviche, beach training at sunrise, cenote swimming in underground rivers, and nights that blur into tequila and tradition.",
+        image: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=2000",
+        sound: "waves"
+      },
+      {
+        name: "Spain",
+        country: "Spain",
+        flag: "🇪🇸",
+        lat: 40.4168,
+        lng: -3.7038,
+        year: "2024",
+        quote: "Where passion is a lifestyle and siestas are sacred. The art of living well.",
+        memory: "Barcelona's Sagrada Familia—Gaudí's unfinished masterpiece still reaching for heaven. Tapas crawls, flamenco fury, training in gyms where boxing meets bullfighting spirit, and learning that rest is part of strength.",
+        image: "https://images.unsplash.com/photo-1543783207-ec64e4d95325?q=80&w=2000",
+        sound: "nightlife"
       },
       {
         name: "Thailand",
@@ -43,9 +187,21 @@ export const portfolioData = {
         lng: 100.5018,
         year: "2022",
         quote: "Ancient wisdom meets modern chaos. Every temple tells a thousand-year-old story.",
-        memory: "Bangkok at dawn—monks in saffron robes collecting alms, the Grand Palace glistening under tropical sun, and the best pad thai I've ever tasted from a street vendor.",
+        memory: "Bangkok at dawn—monks in saffron robes collecting alms, the Grand Palace glistening under tropical sun, and the best pad thai I've ever tasted from a street vendor. Muay Thai gyms where legends train.",
         image: "https://images.unsplash.com/photo-1563492065105-4a10e5f2c8f4?q=80&w=2000",
         sound: "traffic"
+      },
+      {
+        name: "South Africa",
+        country: "South Africa",
+        flag: "🇿🇦",
+        lat: -33.9249,
+        lng: 18.4241,
+        year: "2022",
+        quote: "Where two oceans meet and history rewrote itself. The rainbow nation.",
+        memory: "Cape Town's Table Mountain—a city between mountains and sea. Robben Island's heavy lessons, braai with new brothers, and understanding that freedom is never finished, only fought for.",
+        image: "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?q=80&w=2000",
+        sound: "waves"
       },
       {
         name: "Nigeria",
@@ -70,18 +226,6 @@ export const portfolioData = {
         memory: "Medellín's transformation inspired me—morning training sessions overlooking the valley, salsa in Parque Lleras, and conversations about redemption and second chances.",
         image: "https://images.unsplash.com/photo-1568632234157-ce7aecd03d0d?q=80&w=2000",
         sound: "nightlife"
-      },
-      {
-        name: "United States",
-        country: "United States",
-        flag: "🇺🇸",
-        lat: 38.9072,
-        lng: -77.0369,
-        year: "Home",
-        quote: "The oath I swore. The uniform I wear. The mission that defines me.",
-        memory: "D.C. represents duty—the Pentagon's hallways echoing with purpose, Arlington's solemn rows, and the weight of defending something greater than yourself.",
-        image: "https://images.unsplash.com/photo-1569982175971-d92b01cf8694?q=80&w=2000",
-        sound: "waves"
       }
     ]
   },
