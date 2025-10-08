@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dumbbell, Target, Zap, Activity } from 'lucide-react';
+import { Dumbbell, Target, Zap, Activity, Crosshair } from 'lucide-react';
 import { portfolioData } from '../data/mock';
 
 const CombatSection = () => {
