@@ -35,14 +35,16 @@ export const portfolioData = {
   history: {
     title: "History & Conspiracy Corner",
     subtitle: "Unraveling the Past",
-    description: "A fascination with the shadows of history—from organized crime dynasties to unsolved mysteries that shaped our world.",
+    description: "A fascination with the shadows of history—from government cover-ups to organized crime dynasties to unsolved mysteries that shaped our world.",
     image: "https://images.unsplash.com/photo-1535905748047-14b2415c77d5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxkYXJrJTIwbGlicmFyeXxlbnwwfHx8fDE3NTk4ODIwNjh8MA&ixlib=rb-4.1.0&q=85",
     secondaryImage: "https://images.unsplash.com/photo-1419640303358-44f0d27f48e7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwyfHxkYXJrJTIwbGlicmFyeXxlbnwwfHx8fDE3NTk4ODIwNjh8MA&ixlib=rb-4.1.0&q=85",
     interests: [
-      { topic: "The Mafia", era: "1920s-1980s", focus: "Organizational structure and influence" },
-      { topic: "World War II", era: "1939-1945", focus: "Strategic operations and consequences" },
-      { topic: "Ancient Civilizations", era: "3000 BC - 500 AD", focus: "Lost knowledge and mysteries" },
-      { topic: "Cold War Secrets", era: "1947-1991", focus: "Intelligence operations" }
+      { topic: "9/11 & Inside Jobs", era: "2001", focus: "Building 7, Pentagon anomalies, and unanswered questions" },
+      { topic: "JFK Assassination", era: "1963", focus: "Grassy knoll, magic bullet theory, CIA involvement" },
+      { topic: "Area 51 & UFOs", era: "1947-Present", focus: "Roswell incident, government disclosure, alien technology" },
+      { topic: "MKUltra Mind Control", era: "1950s-1970s", focus: "CIA experiments, psychological warfare, LSD trials" },
+      { topic: "The Mafia Commission", era: "1920s-1990s", focus: "Five Families, organizational power, political corruption" },
+      { topic: "Operation Paperclip", era: "1945-1959", focus: "Nazi scientists in America, Project Mercury, Cold War tech race" }
     ]
   },
   
