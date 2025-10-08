@@ -62,9 +62,20 @@ const PhilosophySection = () => {
                 <p className="text-gray-300 text-lg leading-relaxed mb-8">
                   {philosophy.mission}
                 </p>
+                
+                {/* Faith Section */}
+                <div className="my-8 pt-6 border-t border-purple-900/50">
+                  <h4 className="text-purple-400 text-lg font-bold mb-3 tracking-wide uppercase flex items-center gap-2">
+                    ✝️ Christian Faith
+                  </h4>
+                  <p className="text-gray-300 text-base leading-relaxed italic">
+                    {philosophy.faith}
+                  </p>
+                </div>
+                
                 <div className="pt-6 border-t border-purple-900/50">
                   <p className="text-purple-400 text-sm tracking-widest uppercase font-medium">
-                    Living with Purpose
+                    Living with Purpose & Faith
                   </p>
                 </div>
               </div>
