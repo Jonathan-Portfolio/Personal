@@ -55,13 +55,9 @@ const FutureSection = () => {
                 <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-cyan-500 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                <p className="text-gray-400 text-sm leading-relaxed">
                   {project.description}
                 </p>
-                <button className="flex items-center gap-2 text-cyan-500 hover:text-cyan-400 text-sm font-medium tracking-wide uppercase group-hover:gap-4 transition-all">
-                  Learn More
-                  <ArrowRight className="w-4 h-4" />
-                </button>
               </div>
             ))}
           </div>
