@@ -300,9 +300,11 @@ export const portfolioData = {
       "History teaches lessons that shape the future.",
       "Physical strength mirrors mental fortitude.",
       "Purpose without action is merely a dream.",
-      "Every mission starts with clarity of vision."
+      "Every mission starts with clarity of vision.",
+      "Faith in Christ provides strength beyond my own—a foundation that cannot be shaken."
     ],
-    mission: "To pursue excellence in law, honor in service, and wisdom through experience. To protect, to explore, and to never stop learning."
+    mission: "To pursue excellence in law, honor in service, and wisdom through experience. To protect, to explore, and to never stop learning. Grounded in Christian faith, I seek to serve with integrity and purpose.",
+    faith: "My faith in Christianity is the compass that guides my decisions. Through prayer and scripture, I find the strength to face challenges and the humility to remain grounded in service."
   },
   
   future: {
