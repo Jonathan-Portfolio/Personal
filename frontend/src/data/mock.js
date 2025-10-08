@@ -279,12 +279,12 @@ export const portfolioData = {
   combat: {
     title: "Combat & Focus",
     subtitle: "Physical & Mental Discipline",
-    description: "Training the body and mind through martial arts, boxing, and strength conditioning.",
+    description: "Training the body and mind through martial arts, tactical shooting, and strength conditioning.",
     gymImage: "https://images.unsplash.com/photo-1716307043003-dbe6a5cc496e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxib3hpbmclMjBneW18ZW58MHx8fHwxNzU5ODgyMDc0fDA&ixlib=rb-4.1.0&q=85",
-    ringImage: "https://images.unsplash.com/photo-1716307046875-4c4ba2f43cab?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxib3hpbmclMjBneW18ZW58MHx8fHwxNzU5ODgyMDc0fDA&ixlib=rb-4.1.0&q=85",
+    ringImage: "https://images.unsplash.com/photo-1595590424283-b8f17842773f?q=80&w=2000",
     disciplines: [
       { name: "MMA", level: "Intermediate", focus: "Ground game and striking" },
-      { name: "Boxing", level: "Advanced", focus: "Footwork and combinations" },
+      { name: "Gun Range", level: "Advanced", focus: "Precision and tactical training" },
       { name: "Basketball", level: "Recreational", focus: "Cardio and teamwork" },
       { name: "Weight Lifting", level: "Advanced", focus: "Strength and conditioning" }
     ]
