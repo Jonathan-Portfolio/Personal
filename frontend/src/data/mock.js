@@ -22,13 +22,67 @@ export const portfolioData = {
   travel: {
     title: "Traveler's Mind",
     subtitle: "Places I've Explored",
-    mapImage: "https://images.unsplash.com/photo-1642009071428-119813340e22?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHx3b3JsZCUyMG1hcCUyMHRyYXZlbHxlbnwwfHx8fDE3NTk4ODIwNjR8MA&ixlib=rb-4.1.0&q=85",
     destinations: [
-      { name: "Portugal", position: { top: "35%", left: "20%" }, year: "2023", memory: "Coastal sunsets & historic Lisbon" },
-      { name: "Thailand", position: { top: "45%", left: "72%" }, year: "2022", memory: "Ancient temples & Thai cuisine" },
-      { name: "Nigeria", position: { top: "52%", left: "26%" }, year: "2021", memory: "Reconnecting with roots" },
-      { name: "Japan", position: { top: "40%", left: "80%" }, year: "2024", memory: "Discipline meets tradition" },
-      { name: "Brazil", position: { top: "70%", left: "35%" }, year: "2023", memory: "MMA culture & energy" }
+      {
+        name: "Portugal",
+        country: "Portugal",
+        flag: "🇵🇹",
+        lat: 38.7223,
+        lng: -9.1393,
+        year: "2023",
+        quote: "Where history whispers through cobblestone streets and the Atlantic wind carries stories of explorers.",
+        memory: "Lisbon's golden hour transformed the Alfama district into a living painting—fado music drifting from open windows, the scent of bacalhau, and endless sunset views.",
+        image: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?q=80&w=2000",
+        sound: "waves"
+      },
+      {
+        name: "Thailand",
+        country: "Thailand",
+        flag: "🇹🇭",
+        lat: 13.7563,
+        lng: 100.5018,
+        year: "2022",
+        quote: "Ancient wisdom meets modern chaos. Every temple tells a thousand-year-old story.",
+        memory: "Bangkok at dawn—monks in saffron robes collecting alms, the Grand Palace glistening under tropical sun, and the best pad thai I've ever tasted from a street vendor.",
+        image: "https://images.unsplash.com/photo-1563492065105-4a10e5f2c8f4?q=80&w=2000",
+        sound: "traffic"
+      },
+      {
+        name: "Nigeria",
+        country: "Nigeria",
+        flag: "🇳🇬",
+        lat: 6.5244,
+        lng: 3.3792,
+        year: "2021",
+        quote: "Returning to roots. The heartbeat of Africa pulses strongest here.",
+        memory: "Lagos nights—afrobeats pulsing from every corner, the warmth of family I'd never met, jollof rice debates that lasted hours, and understanding where my strength comes from.",
+        image: "https://images.unsplash.com/photo-1568808862669-d59f53f3fc8c?q=80&w=2000",
+        sound: "nightlife"
+      },
+      {
+        name: "Colombia",
+        country: "Colombia",
+        flag: "🇨🇴",
+        lat: 6.2442,
+        lng: -75.5812,
+        year: "2023",
+        quote: "A land of reinvention. Where mountains touch clouds and resilience runs deep.",
+        memory: "Medellín's transformation inspired me—morning training sessions overlooking the valley, salsa in Parque Lleras, and conversations about redemption and second chances.",
+        image: "https://images.unsplash.com/photo-1568632234157-ce7aecd03d0d?q=80&w=2000",
+        sound: "nightlife"
+      },
+      {
+        name: "United States",
+        country: "United States",
+        flag: "🇺🇸",
+        lat: 38.9072,
+        lng: -77.0369,
+        year: "Home",
+        quote: "The oath I swore. The uniform I wear. The mission that defines me.",
+        memory: "D.C. represents duty—the Pentagon's hallways echoing with purpose, Arlington's solemn rows, and the weight of defending something greater than yourself.",
+        image: "https://images.unsplash.com/photo-1569982175971-d92b01cf8694?q=80&w=2000",
+        sound: "waves"
+      }
     ]
   },
   
